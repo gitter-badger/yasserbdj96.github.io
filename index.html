@@ -7,9 +7,10 @@
     <title>yasserbdj96 | Homepage</title>
     <script type="text/javascript" src="./src/js/include.js"></script>
     <script>include("./src/css/css.css","css");</script>
+    <script>include("./src/js/js.js","js");</script>
   </head>
 
-<body class="bg-paper flex flex-col min-h-screen">
+<body class="bg-paper flex flex-col min-h-screen" onload="read_json()">
   <main class="flex-grow mx-auto text-center">
 
     <!--avatar-->
@@ -21,53 +22,13 @@
             online</div>
         </span>
       </div>
-
       <div class="animate-pulse pt-4 font-bold text-2xl">Boudjada Yasser (yasserbdj96)</div>
-
       <div class="pt-6 font-mono">all posts <a href="#yasserbdj96">#yasserbdj96</a> ,all views my own.</div>
     </section>
 
     <!--links-->
-    <section class="flex justify-center space-x-3 group">
-      <!--github-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://github.com/yasserbdj96">
-        <img src="./src/svg/github.svg">
-      </a>
-      <!--twitter-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://twitter.com/yasserbdj96">
-        <img src="./src/svg/twitter.svg">
-      </a>
-      <!--facebook-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://facebook.com/yasserbdj96">
-        <img src="./src/svg/facebook.svg">
-      </a>
-      <!--mail-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="mailto:yasser.bdj96@gmail.com">
-        <img src="./src/svg/gmail.svg">
-      </a>
-      <!--instagram-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://instagram.com/yasserbdj96">
-        <img src="./src/svg/instagram.svg">
-      </a>
-      <!--linkedin-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://www.linkedin.com/in/yasserbdj96">
-        <img src="./src/svg/linkedin.svg">
-      </a>
-      <!--telegram-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://t.me/yasserbdj96">
-        <img src="./src/svg/telegram.svg">
-      </a>
-      <!--youtube-->
-      <a class="transform hover:-translate-y-1 active:translate-y-1" href="https://www.youtube.com/@yasserbdj96">
-        <img src="./src/svg/youtube.svg">
-      </a>
-      <!--sponsor-->
-      <!--a class="group-hover:animate-bounce-fast" href="#">
-        <svg class="text-red-500 stroke-current fill-current" height="24" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-        </svg>
-      </a-->
-    </section>
+    <section id="links" class="flex justify-center space-x-3 group"></section>
+
   </main>
 
   <!--footer-->
